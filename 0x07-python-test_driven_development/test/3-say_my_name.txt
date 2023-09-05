@@ -1,0 +1,48 @@
+How to Use the "3-say_my_name.py" Module
+This guide explains how to use the "3-say_my_name.py" module, which contains a function called say_my_name(first_name, last_name="").
+
+Usage Instructions
+The function say_my_name(...) is designed to print "My name is <first_name> <last_name>".
+
+Example Usage:
+
+When both the first name and last name are provided, the function prints the full name:
+
+>>> say_my_name("Brennan", "Baraban")
+My name is Brennan Baraban
+
+>>> say_my_name("Cornelius Maxwell", "Jones II")
+My name is Cornelius Maxwell Jones II
+The last_name parameter is optional. If it's not provided, an empty string is printed instead of the last name:
+
+>>> say_my_name("Brennan")
+My name is Brennan 
+Handling Invalid Names
+It's important to note that the parameters first_name and last_name must be strings. If they are not, a TypeError will be raised:
+
+When the first_name is not a string:
+
+>>> say_my_name(6, "James")
+Traceback (most recent call last):
+TypeError: first_name must be a string
+When the last_name is not a string:
+
+>>> say_my_name("LeBron", ["Cavs", "Lakers", "Heat"])
+Traceback (most recent call last):
+TypeError: last_name must be a string
+When both parameters are not strings:
+
+>>> say_my_name({"LeBron": 6, "James": 23}, 7.7)
+Traceback (most recent call last):
+TypeError: first_name must be a string
+If no name is provided for the first_name:
+
+>>> say_my_name(None)
+Traceback (most recent call last):
+TypeError: first_name must be a string
+It's also important to mention that at least one name (the first_name) must be provided. If not, a TypeError will be raised:
+
+>>> say_my_name()
+Traceback (most recent call last):
+TypeError: say_my_name() missing 1 required positional argument: 'first_name'
+In summary, this module is designed for printing names in a specific format and enforces data type requirements to ensure accurate usage
