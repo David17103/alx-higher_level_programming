@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-# 2-rectangle.py
-# This module defines a Rectangle class.
+"""2-rectangle built for task 0x08 python."""
 
 class Rectangle:
     """
