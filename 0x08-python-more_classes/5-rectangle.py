@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-# 5-rectangle.py
-# This module defines a Rectangle class.
+""" 5-rectangle.py"""
+
 
 class Rectangle:
     """

@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 # 9-rectangle.py
-# This module defines a Rectangle class.
+"""This module defines a Rectangle class."""
 
 class Rectangle:
     """
